@@ -170,7 +170,7 @@ function formatarCPF() {
 function redirecionar() {
   var cpf = document.getElementById('cpf').value;
   if (cpf.length === 14) { // Verifica se o CPF está completamente formatado
-    window.location.href = "/s-funil/?cpf=" + encodeURIComponent(cpf) + "&" + new URLSearchParams(window.location.search);
+    window.location.href = "/s-funil/index.html?cpf=" + encodeURIComponent(cpf) + "&" + new URLSearchParams(window.location.search);
   } else {
     alert("Por favor, insira um CPF válido.");
   }
